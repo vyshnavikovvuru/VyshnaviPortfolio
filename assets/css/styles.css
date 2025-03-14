@@ -209,6 +209,7 @@ img {
 .home__title {
   font-size: calc(var(--big-font-size) - 0.9rem); /* Reduce by 0.5rem */
   margin-bottom: var(--mb-5);
+  color: white;
 }
 .home__title-color {
   color: var(--first-color);
