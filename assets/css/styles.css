@@ -149,7 +149,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: none;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -531,6 +531,22 @@ img {
   font-size: 20px;
   font-family:Monospace;
 }
+
+.experience_tab{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:1080%;
+ }
+ .expss-text{
+  width:100%;
+ }
+ .experience_imgtab{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 968px) {
   :root {
@@ -542,11 +558,50 @@ img {
 }
 
 @media (max-width: 767px) {
+  .expss_tab{
+    width:100%;
+    margin-left: 15px;
+    font-size: 12px;
+   }
+  .exp__img{
+    max-width: 90px;
+    height: 75px;
+    margin-left: 20px;
+  }
+  .exprs-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .experience_tab{
+    width: 95%;
+    align-items: center;
+    margin-bottom: 20px;
+   }
+   .expss-text{
+    width: 70%;
+   }
+   .home {
+    position: relative;
+    row-gap: 5rem;
+    padding: 4rem 0 5rem;
+  }
+  .experience_subtitle{
+    margin-left: 5%;
+    margin-bottom: 0px;
+  }
+  .exp_dates{
+    font-size: 15px;
+     font-weight: 100;
+     display : block;
+  }
   .skills_tab {
     display: flex;
     flex-direction: row; 
   justify-content: center;
   }
+
   .skills-text{
     width: 60%;
   }
@@ -637,10 +692,7 @@ img {
     width: 260px;
     padding-top: 20px;
   }
-  .home {
-    row-gap: 2rem;
-  }
-  
+ 
 .home__blob {
   fill: var(--first-color);
   width: 400px;
@@ -663,6 +715,44 @@ img {
 }
 
 @media (max-width: 320px) {
+  .expss_tab{
+    width:100%;
+    margin-left: 15px;
+    font-size: 12px;
+   }
+  .exp__img{
+    max-width: 90px;
+    height: 75px;
+    margin-left: 20px;
+  }
+  .exprs-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .experience_tab{
+    width: 95%;
+    align-items: center;
+    margin-bottom: 20px;
+   }
+   .expss-text{
+    width: 70%;
+   }
+   .home {
+    position: relative;
+    row-gap: 5rem;
+    padding: 4rem 0 5rem;
+  }
+  .experience_subtitle{
+    margin-left: 5%;
+    margin-bottom: 0px;
+  }
+  .exp_dates{
+    font-size: 15px;
+     font-weight: 100;
+     display : block;
+  }
   .home {
     row-gap: 2rem;
   }
@@ -681,6 +771,44 @@ img {
 }
 
 @media (min-width: 576px) {
+  .work_section{
+    padding: 20px;
+  }
+
+  .experience_tab{
+    display: flex;
+   flex-direction: row;
+   width: 90%;
+    padding-left: 10%;
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+   .expss-texttab{
+    width:100%;
+    margin-left: 0px;
+    align-content: center;
+   }
+   .expss_tab{
+    width: 100%;
+    margin-left: 0px;
+    font-size: 17px;
+   }
+  .exp__img{
+    max-width: 170px;
+   height: auto;
+  }
+  .experience_subtitle{
+    margin-left: 17%;
+  }
+  .exp_dates{
+    font-size: 15px;
+     margin-left: 20px; 
+     font-weight: 100;
+  }
+  .skills__text{
+    margin-left: 15%;
+  }
+
   .skills__subtitle {
     text-align: left; /* Aligns text to the left */
     width: 100%; /* Ensures it spans full width */
@@ -749,7 +877,6 @@ img {
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    padding-top: 2rem;
   }
 
   .contact__form {

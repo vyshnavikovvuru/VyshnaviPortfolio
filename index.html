@@ -1,256 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" type="image/x-icon" href="./assets/img/favicon_io/favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>KnvsRaju Profile</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <video autoplay loop muted playsinline id="bg-video">
-            <source src="./assets/img/125827-735656193_medium.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="video-overlay"></div>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        <header class="l-header" style="background-color: black;">
-            <nav class="nav bd-grid">
-                <div>
-                    <h1><a href="#" class="nav__logo">KNVSR.</a></h1>
-                </div>
+    <title>KnvsRaju Profile</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<body>
+    <!--===== HEADER =====-->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="./assets/img/125827-735656193_medium.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <h1><a href="#" class="nav__logo">KNVSR.</a></h1>
+            </div>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">K.N.V.S.Raju</span><br>
-                        <span class="home_role">Full-Stack Developer</span> </h3>
-                        <a href="./assets/img/KnvsRajuResume.pdf" download="Resume.pdf">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h3 class="home__title">Hi,<br>I'am <span class="home__title-color">K.N.V.S.Raju</span><br>
+                    <span class="home_role">Full-Stack Developer</span>
+                </h3>
+                <a href="./assets/img/KnvsRajuResume.pdf" download="Resume.pdf">
                     <button class="resumebutton" id=downloadBtn>Download Resume</button>
                 </a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/raju5757" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 -240 800 800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="60" y="80" href="assets/img/mainimage.png"/>                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/aboutimg.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">K N V Satyanarayana Raju</h2>
-                        <p class="about__text">Full-Stack Developer with experience in designing, developing, and deploying
-                             scalable web and mobile applications. Proficient in Angular, React Native, .NET, and SQL
-                              with a strong background in building secure, role-based platforms for diverse industries. 
-                               Passionate about problem-solving, and troubleshooting.
-                                Adept at collaborating 
-                            with cross-functional teams to deliver high-quality solutions that enhance business operations.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <!-- Professional Skills Section (At the Top) -->
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-
-                    <div class="skills_tab">
-                        <div class="skills-text">
-                            <p class="skills__text">
-                                Full-Stack Developer with experience in designing, developing, and deploying
-                                scalable web and mobile applications.
-                            </p>
-                        </div>
-                        <div class="skills-image">
-                            <img src="assets/img/work3.jpg" alt="Skills Image" class="skills__img">
-                        </div>
-                    </div>
-                
-                    <!-- Skills Section (Aligned in a Single Row) -->
-                    <div class="skills__content">
-                      
-                            <!-- Frontend Development -->
-                            <h4 class="skills__subtitle">Frontend Development : </h4>
-
-                            <div class="skills__data">
-                                <div class="skill__item">
-
-                                    <div class="skills__names">
-                                        <i class='bx bxl-angular skills__icon'></i>
-                                        <span class="skills__name skill__name--border">Angular</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class='bx bxl-react skills__icon'></i>
-                                        <span class="skills__name skill__name--border">React Native</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class='bx bxl-html5 skills__icon'></i>
-                                        <span class="skills__name skill__name--border">HTML</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class='bx bxl-css3 skills__icon'></i>
-                                        <span class="skills__name skill__name--border">CSS</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class='bx bxl-bootstrap skills__icon'></i>
-                                        <span class="skills__name skill__name--border">Bootstrap</span>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <!-- Backend Development -->
-                            <h4 class="skills__subtitle">Backend Development :</h4>
-
-                            <div class="skills__data">
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class="fa-brands fa-microsoft skills__icon"></i>
-                                        <span class="skills__name skill__name--border">ASP.Net</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class="fa-brands fa-java skills__icon"></i>
-                                        <span class="skills__name skill__name--border">Spring Boot</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <h4 class="skills__subtitle">Database Management :</h4>
-
-                            <div class="skills__data">
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class="fa-solid fa-database skills__icon"></i>
-                                        <span class="skills__name skill__name--border">Sql</span>
-                                    </div>
-                                </div>
-                                <div class="skill__item">
-                                    <div class="skills__names">
-                                        <i class="fa-solid fa-database skills__icon"></i>
-                                        <span class="skills__name skill__name--border">My Sql</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                       
-                    </div>
-                </div>
-                
-                
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/raju5757" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 -240 800 800" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="60" y="80" href="assets/img/mainimage.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/aboutimg.jpeg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">K N V Satyanarayana Raju</h2>
+                    <p class="about__text">Full-Stack Developer with experience in designing, developing, and deploying
+                        scalable web and mobile applications. Proficient in Angular, React Native, .NET, and SQL
+                        with a strong background in building secure, role-based platforms for diverse industries.
+                        Passionate about problem-solving, and troubleshooting.
+                        Adept at collaborating
+                        with cross-functional teams to deliver high-quality solutions that enhance business operations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <!-- Professional Skills Section (At the Top) -->
+                <div class="skills_tab">
+                    <div class="skills-text">
+                        <p class="skills__text">
+                            Full-Stack Developer with experience in designing, developing, and deploying
+                            scalable web and mobile applications.
+                        </p>
+                    </div>
+                    <div class="skills-image">
+                        <img src="assets/img/work3.jpg" alt="Skills Image" class="skills__img">
+                    </div>
+                </div>
+
+                <!-- Skills Section (Aligned in a Single Row) -->
+                <div class="skills__content">
+
+                    <!-- Frontend Development -->
+                    <h4 class="skills__subtitle">Frontend Development : </h4>
+
+                    <div class="skills__data">
+                        <div class="skill__item">
+
+                            <div class="skills__names">
+                                <i class='bx bxl-angular skills__icon'></i>
+                                <span class="skills__name skill__name--border">Angular</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name skill__name--border">React Native</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name skill__name--border">HTML</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name skill__name--border">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class='bx bxl-bootstrap skills__icon'></i>
+                                <span class="skills__name skill__name--border">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <h4 class="skills__subtitle">Backend Development :</h4>
+
+                    <div class="skills__data">
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class="fa-brands fa-microsoft skills__icon"></i>
+                                <span class="skills__name skill__name--border">ASP.Net</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class="fa-brands fa-java skills__icon"></i>
+                                <span class="skills__name skill__name--border">Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="skills__subtitle">Database Management :</h4>
+
+                    <div class="skills__data">
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class="fa-solid fa-database skills__icon"></i>
+                                <span class="skills__name skill__name--border">Sql</span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skills__names">
+                                <i class="fa-solid fa-database skills__icon"></i>
+                                <span class="skills__name skill__name--border">My Sql</span>
+                            </div>
+                        </div>
+                    </div>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                </div>
+            </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work_section" id="work">
+            <h2 class="section-title">Experience</h2>
+            <h4 class="experience_subtitle">WEBINGATE SOLUTIONS PVT LTD <span class="exp_dates">( jul 2023 - Present )
+                </span> <br>
+            </h4>
+            <div class="experience_tab">
+                <div class="experience_imgtab">
+                    <img src="assets/img/work3.jpg" alt="Skills Image" class="exp__img">
+                </div>
+                <div class="expss-texttab">
+                    <p class="expss_tab">
+                        Developed Business4.0 Marketplace, an aggregator platform
+                        for suppliers and buyers, using Angular, .NET, and SQL,
+                        ensuring aseamless buying and selling experience.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="experience_tab">
+                <div class="experience_imgtab">
+                    <img src="assets/img/work5.jpg" alt="Skills Image" class="exp__img">
+                </div>
+                <div class="expss-texttab">
+                    <p class="expss_tab">
+                        Designed and built a React-Native Android app with role-based
+                        access, enhancing mobile accessibility and user experience for
+                        the Business4.0 Marketplace.
+
+
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="experience_tab">
+                <div class="experience_imgtab">
+                    <img src="assets/img/work4.jpg" alt="Skills Image" class="exp__img">
+                </div>
+                <div class="expss-texttab">
+                    <p class="expss_tab">
+                        Worked on GDS Property Trades platform, a realestate
+                        website for buying and selling land/plots using Angular, .NET,
+                        andSQL.
+
+
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="experience_tab">
+                <div class="experience_imgtab">
+                    <img src="assets/img/work1.jpg" alt="Skills Image" class="exp__img">
+                </div>
+                <div class="expss-texttab">
+                    <p class="expss_tab">
+                        Deployed applications on AWS,managing server
+                        configurations, optimizing performance.
+
+
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Marlon</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
