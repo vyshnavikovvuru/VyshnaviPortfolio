@@ -13,8 +13,8 @@ showMenu('nav-toggle','nav-menu')
 
 document.getElementById("downloadBtn").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "assets/Resume.pdf"; // Ensure this path is correct
-    link.setAttribute("download", "Resume.pdf"); // Force download
+    link.href = "assets/Resume.pdf"; 
+    link.setAttribute("download", "Resume.pdf"); 
     link.style.display = "none";
     document.body.appendChild(link);
     link.click();
@@ -56,9 +56,14 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+    duration: 1000,
+    delay: 150,
+  //   reset: true
+});
+
+sr.reveal('.skills_tab, .home__data, .about__img, .skills__subtitle, .skills__text, .home__img, .about__subtitle, .about__text, .skills__img, .exp__img, .expss-texttab', { 
+    viewFactor: 0.1,
+    interval: 100 
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 

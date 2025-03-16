@@ -502,7 +502,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: rgba(5, 85, 5, 0.562);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -561,8 +561,31 @@ img {
   .expss_tab{
     width:100%;
     margin-left: 15px;
-    font-size: 12px;
+    font-size: 13px;
    }
+   .nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
+    width: 100%;
+}
+.l-header {
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
   .exp__img{
     max-width: 90px;
     height: 75px;
@@ -705,10 +728,13 @@ img {
   width: 420px;
   height: 420px;
   transition: transform 0.3s ease-in-out;
+  pointer-events: none; /* Prevents interaction outside the masked area */
 
 }
-
-.home__blob:hover .home__blob-img {
+.mask2 {
+  pointer-events: auto; /* Allows hover only within the mask */
+}
+.mask2:hover .home__blob-img {
   transform: scale(1.4) rotate(4deg) translateX(-70px) translateY(-45px);
 }
 
