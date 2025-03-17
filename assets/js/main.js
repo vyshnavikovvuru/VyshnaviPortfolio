@@ -52,6 +52,15 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__list');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
