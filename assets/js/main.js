@@ -79,3 +79,24 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .exp__img, .expss-texttab',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bars = document.querySelectorAll('.progress-bar');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const targetWidth = bar.getAttribute('data-width');
+        bar.style.width = targetWidth;
+        obs.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  bars.forEach(bar => {
+    bar.style.width = "0";
+    observer.observe(bar);
+  });
+});
+

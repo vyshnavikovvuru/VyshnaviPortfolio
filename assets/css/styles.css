@@ -502,7 +502,7 @@ img {
 }
 
 /* ===== FOOTER =====*/
-.footer {
+/* .footer {
   background-color: rgba(5, 85, 5, 0.562);
   color: #fff;
   text-align: center;
@@ -527,7 +527,57 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+} */
+footer {
+  background-color: rgba(5, 85, 5, 0.562);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'Poppins', sans-serif;
 }
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content h2 {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+  font-weight: var(--font-semi);
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: var(--normal-font-size);
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: var(--first-color); /* hsl(224, 89%, 60%) */
+}
+
+.social-icons {
+  margin-top: var(--mb-4);
+}
+
+.social-icons a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--first-color);
+}
+
+
 .home_role{
   font-size: 20px;
   font-family:Monospace;
@@ -787,6 +837,8 @@ html, body {
 .home__blob-img {
   width: 420px;
   height: 420px;
+   transform: scale(3);
+     display: block; 
   transition: transform 0.3s ease-in-out;
   pointer-events: none; /* Prevents interaction outside the masked area */
 
@@ -1066,4 +1118,40 @@ html, body {
   .home__img {
     width: 450px;
   }
+}
+.skills-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill-bar p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Progress Container */
+.progress {
+  width: 100%;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Progress Fill */
+.progress-bar {
+  height: 100%;
+  width: 0; /* Start from 0 */
+  background-color: #4caf50;
+  color: white;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  transition: width 1.5s ease-in-out;
 }
